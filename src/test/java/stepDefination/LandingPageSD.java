@@ -34,7 +34,8 @@ public class LandingPageSD {
 	    //.trim() used for remove space
 	   productName = landingpage.getproductname().split("-")[0].trim();
 	   System.out.println(productName +" is extracted from the home page");
-	}
+	   System.out.println("mY NAME iS tOMATO");
+	   }
 	@When("Added {string} items of the selected product to the cart")
 	public void Added_items_of_the_selected_product_to_the_cart(String quantity) {
 		landingpage.incrementQuantity(Integer.parseInt(quantity));
